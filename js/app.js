@@ -1,17 +1,13 @@
-let drinkName;
 let drink = prompt("Оберіть один з даних напоїв: Кава; Чай; Сік");
 switch (drink) {
   case "Кава":
-    drinkName = "Кава";
-    alert(drinkName);
+    alert(drink);
     break;
   case "Чай":
-    drinkName = "Чай";
-    alert(drinkName);
+    alert(drink);
     break;
   case "Сік":
-    drinkName = "Сік";
-    alert(drinkName);
+    alert(drink);
     break;
   default:
     alert("У нас неразі нема даного напою");
@@ -114,4 +110,33 @@ switch (color) {
     break;
   default:
     alert("Неправельно ведений день");
+}
+
+let firstNumber = Number(prompt("Введіть перше число"));
+let secondNumber = Number(prompt("Введіть друге число"));
+let total;
+let operator = prompt("Введіть оператор");
+switch (operator) {
+  case "+":
+    total = firstNumber + secondNumber;
+    alert(total);
+    break;
+  case "-":
+    total = firstNumber - secondNumber;
+    alert(total);
+    break;
+  case "*":
+    total = firstNumber * secondNumber;
+    alert(total);
+    break;
+  case "/":
+    total = firstNumber / secondNumber;
+    alert(total);
+    break;
+  case "%":
+    total = firstNumber % secondNumber;
+    alert(total);
+    break;
+  default:
+    alert("Неправельно введена операція");
 }
